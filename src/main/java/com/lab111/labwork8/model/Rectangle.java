@@ -14,8 +14,8 @@ public class Rectangle extends GraphicElement {
 
     @Override
     public void draw(Graphics2D g2d) {
-        g2d.setColor(Color.decode(color));
-        g2d.drawRect(position.getX(), position.getY(), width, height);
+        g2d.setColor(Color.decode(this.color));
+        g2d.fillRect(this.position.getX(), this.position.getY(), width, height);
     }
 
     @Override
@@ -31,4 +31,13 @@ public class Rectangle extends GraphicElement {
     }
 
     // Геттери і сеттери залишаються без змін
+@Override
+public String toString() {
+    return "Rectangle{" +
+            "position=" + position +
+            ", color='" + color + '\'' +
+            ", width=" + width +
+            ", height=" + height +
+            '}';
+}
 }

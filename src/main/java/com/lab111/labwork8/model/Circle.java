@@ -30,4 +30,12 @@ public class Circle extends GraphicElement {
     }
 
     // Геттери і сеттери залишаються без змін
+@Override
+public String toString() {
+    return "Circle{" +
+            "position=" + position +
+            ", color='" + color + '\'' +
+            ", radius=" + radius +
+            '}';
+}
 }
